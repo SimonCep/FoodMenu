@@ -3,12 +3,13 @@ import React, { useState } from 'react';
 function loadRecipe(searchInput, setMeal) {
   fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchInput)
     .then((response) => response.json())
-    .then((data) => setMeal(data.meals ? data.meals[0].strMeal : "Meal not found"));
+    .then((data) => setMeal(data.meals ? data.meals : []))
+    .catch((error) => console.log(error));
 }
 
 const SearchBar = () => {
   const [searchInput, setSearchInput] = useState("");
-  const [meal, setMeal] = useState("");
+  const [meal, setMeal] = useState([]);
 
   const handleChange = (e) => {
     e.preventDefault();
@@ -30,7 +31,11 @@ const SearchBar = () => {
         value={searchInput}
       />
       <button onClick={handleSearch}>Search</button>
-      {meal && <div><h>{meal}</h></div>}
+      {meal.map((m) => (
+        <div key={m.idMeal}>
+          <h>{m.strMeal}</h>
+        </div>
+      ))}
     </div>
   );
 };
