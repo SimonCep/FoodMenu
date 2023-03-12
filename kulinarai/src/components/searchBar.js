@@ -1,41 +1,38 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react';
 
+function loadRecipe(searchInput, setMeal) {
+  fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchInput)
+    .then((response) => response.json())
+    .then((data) => setMeal(data.meals ? data.meals[0].strMeal : "Meal not found"));
+}
 
 const SearchBar = () => {
-  // Function to load the recepies from the API
-  function loadRecepie() {
-      fetch("https://www.themealdb.com/api/json/v1/1/search.php?s="+searchInput)
-        .then((response) => response.json())
-        .then((data) => console.log(data.meals));
-  }
-
-  //const [recepie, setRecepie] = useState([]);
-  // useState for search Input
   const [searchInput, setSearchInput] = useState("");
+  const [meal, setMeal] = useState("");
 
-  // a const for handeling the changes in the search bar
   const handleChange = (e) => {
     e.preventDefault();
     setSearchInput(e.target.value);
   };
-  
-  // return statement that provides what to show on the screen
+
+  const handleSearch = () => {
+    if (searchInput) {
+      loadRecipe(searchInput, setMeal);
+    }
+  }
+
   return (
     <div>
-
       <input
         type="search"
         placeholder="Search here"
         onChange={handleChange}
-        value={searchInput} />
-
-      <button onClick={useEffect(() => {loadRecepie()})}>Search</button>
-        <div>
-          <h>{searchInput}</h>
-        </div>
-      </div>
-  )
-
+        value={searchInput}
+      />
+      <button onClick={handleSearch}>Search</button>
+      {meal && <div><h>{meal}</h></div>}
+    </div>
+  );
 };
 
 export default SearchBar;
