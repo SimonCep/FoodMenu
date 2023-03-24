@@ -8,9 +8,8 @@ function App() {
   return (
     <div className='App'>
       <Navbar />
-      <main>
-        <SearchBar />
-      </main>
+      <Sidebar />
+      <SearchBar />
     </div>
   )
 };
