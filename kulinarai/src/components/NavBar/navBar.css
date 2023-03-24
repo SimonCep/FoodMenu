@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Organetto';
+    src: url('../../..//fonts/Fontspring-DEMO-organetto-regular.otf') format('opentype');
+    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Organetto Bold';
+    src: url('../../..//fonts/Fontspring-DEMO-organetto-semiextbold.otf') format('opentype');
+    font-weight: bold;
+  }
+
+.navbar {
+    background: linear-gradient(to right, #ae4225, #f3b184);
+    justify-content: center;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: rgb(245, 240, 240);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    font-family: 'Organetto Bold', sans-serif;
+    text-align: center;
+    font-size: 25px;
+  }
