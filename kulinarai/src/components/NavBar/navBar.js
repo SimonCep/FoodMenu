@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Button, Offcanvas } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import './navBar.css';
 
 function Navbar() {
@@ -25,8 +26,12 @@ function Navbar() {
         </Offcanvas.Header>
         <Offcanvas.Body>
           <ul className="list-sidebar">
-            <li>Home</li>
-            <li>About us</li>
+            <div>
+              <a href="/">Home</a>
+            </div>
+            <div>
+              <a href="/AboutUs">About us</a>
+            </div>
             <li>Contact us</li>
           </ul>
         </Offcanvas.Body>
