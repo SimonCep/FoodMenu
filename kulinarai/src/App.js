@@ -1,6 +1,6 @@
 import React from 'react'
 import './App.css'
-import SearchBar from './components/searchBar'
+import SearchBar from './components/SearchBar/searchBar'
 import Navbar from './components/NavBar/navBar';
 import Sidebar from './components/SideBar/sideBar';
 
