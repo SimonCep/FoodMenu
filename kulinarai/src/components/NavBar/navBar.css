@@ -12,6 +12,7 @@
 .navbar {
     background: linear-gradient(to right, #ae4225, #f3b184);
     justify-content: center;
+    border-bottom: 2px solid rgb(226, 199, 168);
   }
   
   .navbar-brand, .nav-link {

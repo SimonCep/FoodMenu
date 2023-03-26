@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Jelligun';
+    src: url('../../..//fonts/Jelligun-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+body {
+    background-color: #ffffff;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='76' height='76' viewBox='0 0 100 100'%3E%3Cg stroke='%23CCC' stroke-width='11.2' stroke-opacity='0.57'%3E%3Crect fill='%23ECC1A0' x='-60' y='-60' width='96' height='240'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.card-title, .card-text, .search-bar, .btn {
+    font-family: 'Jelligun', sans-serif !important;
+}
+
+.btn {
+    background-color: #ae4225 !important;
+    font-size: 24px !important;
+}
+
+.search-bar {
+    font-size: 24px !important;
+}
+
+.card-title {
+    font-size: 56px !important;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 32px !important;
+}
