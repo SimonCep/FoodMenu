@@ -2,10 +2,11 @@ import React, { useState } from 'react';
 import { Card, Container } from 'react-bootstrap';
 import './styles.css';
 
+
 function loadRecipe(searchInput, setMeal) {
   fetch("https://www.themealdb.com/api/json/v1/1/search.php?s=" + searchInput)
     .then((response) => response.json())
-    .then((data) => setMeal(data.meals ? data.meals : []))
+    .then((data) => setMeal(data.meals ? data.meals : [{"idMeal": '1', "strMeal": "Meal not found"}]))      
     .catch((error) => console.log(error));
 }
 
@@ -39,15 +40,27 @@ const SearchBar = () => {
         </button>
       </div>
       {meal.map((m) => (
-        <Card key={m.idMeal} className="my-3 p-3 d-flex flex-column">
-          <Card.Img variant="top" src={m.strMealThumb} />
-          <Card.Body className="d-flex flex-column">
-            <Card.Title className="card-title">{m.strMeal}</Card.Title>
-            <Card.Text className="card-text"><strong>Category:</strong> {m.strCategory}</Card.Text>
-            <Card.Text ><strong>Area:</strong> {m.strArea}</Card.Text>
-          </Card.Body>
-        </Card>
-      ))}
+  <div key={m.idMeal}>
+    {m.idMeal == 1 ? (
+      <Card className="my-3 p-3 d-flex flex-column">
+        <Card.Img variant="top" src="https://i.imgflip.com/rndxz.jpg" alt="meal not found" />
+        <Card.Body className="d-flex flex-column">
+          <Card.Title className="card-title">{m.strMeal}</Card.Title>
+          <Card.Text className="card-text"><strong>No results match your search criteria</strong> {m.strCategory}</Card.Text>          
+        </Card.Body>
+      </Card>
+    ) : (
+      <Card className="my-3 p-3 d-flex flex-column">
+        <Card.Img variant="top" src={m.strMealThumb} />
+        <Card.Body className="d-flex flex-column">
+          <Card.Title className="card-title">{m.strMeal}</Card.Title>
+          <Card.Text className="card-text"><strong>Category:</strong> {m.strCategory}</Card.Text>
+          <Card.Text><strong>Area:</strong> {m.strArea}</Card.Text>
+        </Card.Body>
+      </Card>
+    )}
+  </div>
+))}
     </Container>
   );
 };
