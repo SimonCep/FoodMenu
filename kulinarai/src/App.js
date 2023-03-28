@@ -3,7 +3,7 @@ import './App.css'
 import Home from './components/Home/home'
 import AboutUs from './components/AboutUs/aboutUs'
 import Navbar from './components/NavBar/navBar'
-import { BrowserRouter as Router, Route,  Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
@@ -11,14 +11,10 @@ function App() {
       <div className='App'>
         <Navbar/>
         <div className='links'>
-          <Switch>
-            <Route exact path="/">
-              <Home/>
-            </Route>
-            <Route exact path="/AboutUs">
-              <AboutUs/>
-            </Route>
-          </Switch>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/AboutUs" element={<AboutUs />} />
+          </Routes>
         </div>
       </div>
     </Router>
