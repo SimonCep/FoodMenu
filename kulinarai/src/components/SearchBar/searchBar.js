@@ -41,7 +41,7 @@ const SearchBar = () => {
       </div>
       {meal.map((m) => (
   <div key={m.idMeal}>
-    {m.idMeal == 1 ? (
+    {m.idMeal = 1 ? (
       <Card className="my-3 p-3 d-flex flex-column">
         <Card.Img variant="top" src="https://i.imgflip.com/rndxz.jpg" alt="meal not found" />
         <Card.Body className="d-flex flex-column">

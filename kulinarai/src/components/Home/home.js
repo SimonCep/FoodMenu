@@ -1,5 +1,4 @@
 import SearchBar from "../SearchBar/searchBar"
-import Navbar from "../NavBar/navBar"
 
 function Home(){
     return(
