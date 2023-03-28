@@ -1,31 +1,38 @@
 import React from 'react'
+import { Container, Row, Col, Image } from 'react-bootstrap'
 import './aboutUs.css'
-import Image from 'react-bootstrap/Image'
 
 function AboutUs() {
   return (
-    <div className='AboutUs'>
-      <h1>About Us</h1>
+    <Container className='AboutUs'>
+      <h1 className='about-header'>About Us</h1>
       <p className='for-paragraph'>
-        The website was created by the students of Kaunas Uiversity of Technology.
+        The website was created by the students of Kaunas University of Technology.
         They are all studying in informatics engineering and belong to IFIN-1/3.
         Their names are: Simas Čeponis, Justas Bujko, Tadas Lekerauskas. This website was created using
-        agile methodology. Every member of the team has a few roles. Here is the information about us:<br/>
-        Simas Čeponis:<br/>
-        Roles: programmer, team leader <br/>
-        E-Mail: simas.ceponis@ktu.edu <br/>
-        <img src={require('../../images/Simas.jpg')}/> <br/> <br/>
-        Justas Bujko:<br/>
-        Roles: programmer, product leader <br/>
-        E-Mail: justas.bujko@ktu.edu <br/>
-        <img src={require('../../images/Justas.jpg')}/> <br/> <br/>
-        Tadas Lekerauskas:<br/> 
-        Roles: programmer, designer <br/>
-        E-Mail: tadas.lekerauskas@ktu.edu <br/>
-        <img src={require('../../images/Tadas.jpg')}/> <br/>
+        agile methodology. Every member of the team has a few roles. Here is the information about us:
       </p>
-
-    </div>
+      <Row>
+        <Col className='person' md={4}>
+          <Image className='profile-pic' src={require('../../images/Simas.jpg')} />
+          <h3 className='person-name'>Simas Čeponis</h3>
+          <p>Roles: programmer, team leader</p>
+          <p>E-Mail: simas.ceponis@ktu.edu</p>
+        </Col>
+        <Col className='person' md={4}>
+          <Image className='profile-pic' src={require('../../images/Justas.png')} />
+          <h3 className='person-name'>Justas Bujko</h3>
+          <p>Roles: programmer, product leader</p>
+          <p>E-Mail: justas.bujko@ktu.edu</p>
+        </Col>
+        <Col className='person' md={4}>
+          <Image className='profile-pic' src={require('../../images/Tadas.jpg')} />
+          <h3 className='person-name'>Tadas Lekerauskas</h3>
+          <p>Roles: programmer, designer</p>
+          <p>E-Mail: tadas.lekerauskas@ktu.edu</p>
+        </Col>
+      </Row>
+    </Container>
   )
 };
 
