@@ -1,6 +1,31 @@
+.about-header {
+    font-family: 'Alkatra', cursive;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+.person {
+    font-family: 'Alkatra', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.person-name {
+    font-weight: bold;
+}
+
 .for-paragraph {
     font-size: 25px !important;
     text-align: left;
     margin-left: 15pt;
     margin-right: 15pt;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.profile-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
 }
