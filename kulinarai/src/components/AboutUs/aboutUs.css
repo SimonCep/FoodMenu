@@ -1,9 +1,3 @@
-@font-face {
-    font-family: 'Helvetica';
-    src: url('../../..//fonts/HelveticaBQ-Roman.otf') format('opentype');
-    font-weight: normal;
-}
-
 .about-header {
     font-family: 'Alkatra', cursive;
     font-family: 'Work Sans', sans-serif;
