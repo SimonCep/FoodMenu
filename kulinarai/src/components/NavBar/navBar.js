@@ -31,7 +31,9 @@ function Navbar() {
             <div>
               <a href="/AboutUs">About us</a>
             </div>
-            <li>Contact us</li>
+            <div>
+              <a href="/ContactUs">Contact us</a>
+            </div>
           </ul>
         </Offcanvas.Body>
       </Offcanvas>
