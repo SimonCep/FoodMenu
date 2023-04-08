@@ -21,7 +21,7 @@
     font-family: 'Alkatra', cursive;
     font-family: 'Work Sans', sans-serif;
 }
-
+/* Icon parameters */
 .contact-pic {
     width: 200px;
     height: 200px;
@@ -36,12 +36,13 @@
     object-position: center;
     border-radius: 25%;
 }
+/* Containers backround */
 .contactUs {
     background-color: #fff;
     padding: 20px;
     border: 15px solid #ccc;
   }
-  
+/* Section backround */
 .contact {
     background-color: #fff;
     padding: 20px;
