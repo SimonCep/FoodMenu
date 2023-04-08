@@ -13,8 +13,11 @@ function App() {
         <Navbar/>
         <div className='links'>
           <Routes>
+            { /* route to Home page */}
             <Route path="/" element={<Home />} />
+            { /* route to About us page page */}
             <Route path="/AboutUs" element={<AboutUs />} />
+            { /* route to individual recipe page */}
             <Route path="/Recipe/:id" element={<RecipePage/>} />
           </Routes>
         </div>

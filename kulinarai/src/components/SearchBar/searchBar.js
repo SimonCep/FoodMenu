@@ -56,6 +56,7 @@ const SearchBar = () => {
           <Card.Title className="card-title">{m.strMeal}</Card.Title>
           <Card.Text className="card-text"><strong>Category:</strong> {m.strCategory}</Card.Text>
           <Card.Text><strong>Area:</strong> {m.strArea}</Card.Text>
+          { /* The link to the individual recipe page */}
           <Card.Link className="card-text" href={'/Recipe/' + m.idMeal} >More information</Card.Link>
         </Card.Body>
       </Card>
