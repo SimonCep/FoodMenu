@@ -5,12 +5,13 @@ import AboutUs from './components/AboutUs/aboutUs'
 import Navbar from './components/NavBar/navBar'
 import ContactUs from './components/ContactUs/contactUs'
 import RecipePage from './components/RecipePage/recipePage'
+import Footer from "./components/Footeris/footer";
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 function App() {
   return (
     <Router>
-      <div className='App'>
+      <div className='App'>      
         <Navbar/>
         <div className='links'>
           <Routes>
@@ -22,8 +23,9 @@ function App() {
             { /* route to individual recipe page */}
             <Route path="/Recipe/:id" element={<RecipePage/>} />
           </Routes>
-        </div>
+        </div> 
       </div>
+      <Footer/>       
     </Router>
   )
 };
