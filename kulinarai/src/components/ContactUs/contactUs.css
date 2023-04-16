@@ -1,0 +1,50 @@
+.about-header {
+    font-family: 'Alkatra', cursive;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: bold;
+}
+
+.contact {
+    font-family: 'Alkatra', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.contact-name {
+    font-weight: bold;
+}
+
+.for-paragraph {
+    font-size: 25px !important;
+    text-align: left;
+    margin-left: 15pt;
+    margin-right: 15pt;
+    font-family: 'Alkatra', cursive;
+    font-family: 'Work Sans', sans-serif;
+}
+/* Icon parameters */
+.contact-pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25%;
+}
+.map-pic {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25%;
+}
+/* Containers backround */
+.contactUs {
+    background-color: #fff;
+    padding: 20px;
+    border: 15px solid #ccc;
+  }
+/* Section backround */
+.contact {
+    background-color: #fff;
+    padding: 20px;
+   
+  }
