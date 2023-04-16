@@ -30,3 +30,10 @@ body {
 .card-text {
     font-size: 32px !important;
 }
+
+.card-link {
+    text-decoration: none !important;
+    color: inherit !important;
+    cursor: pointer !important;
+    transition: color 0.2s ease-in-out !important;
+  }
