@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Jelligun';
+    src: url('../../..//fonts/Jelligun-Regular.otf') format('opentype');
+    font-weight: normal;
+}
+
+h2 {
+    font-family: 'Jelligun', sans-serif !important;
+    font-size: 60px !important;
+}
+
+.card-height {
+    max-height: px !important;
+}
+
+.Filter {
+    border: 1px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #ae4225, #f3b184);
+    justify-content: center;
+    border: 2px solid black;
+}
+
+
+.flag-container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.category-container {
+    display: inline-block;
+    cursor: pointer;
+}
