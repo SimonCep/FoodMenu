@@ -6,9 +6,12 @@
 module.exports = {
   transform: {
     '^.+\\.jsx?$': 'babel-jest',
+    '^.+\\.js?$': 'babel-jest',
   },
   moduleNameMapper: {
-    "\\.(css|less)$": "identity-obj-proxy"
+    "\\.(css|less)$": "identity-obj-proxy",
+    '^@/(.*)$': '<rootDir>/src/$1',
+    "\\.(jpg|jpeg|png|gif|svg)$": "<rootDir>/node_modules/identity-obj-proxy",
   },
   // All imported modules in your tests should be mocked automatically
   // automock: false,
