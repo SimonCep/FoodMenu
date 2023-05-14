@@ -1,4 +1,3 @@
-
 .heading {
     border: 1px solid black;
     width: 100%;
@@ -6,8 +5,10 @@
     background: linear-gradient(to right, #ae4225, #f3b184);
     justify-content: center;
     border: 2px solid black;
+    color: rgb(245, 240, 240);
 }
-.registration-page{
+
+.registration-page {
     text-align: center;
     display: flex;
     min-height: 100vh;
@@ -15,20 +16,23 @@
     justify-content: center;
     background-image: linear-gradient(79deg, brown, orange, brown);
 }
-.registration-form{
-    display:flex;
+
+.registration-form {
+    display: flex;
     flex-direction: column;
     align-items: center;
     background-color: #fff;
     padding: 20px;
     border: 15px solid #ccc;
 }
+
 .registration-form label {
     text-align: left;
     padding: 0.25rem 0;
     font-weight: bolder;
     font-size: 20px;
 }
+
 .registration-form input {
     width: 300px;
     height: 50px;
