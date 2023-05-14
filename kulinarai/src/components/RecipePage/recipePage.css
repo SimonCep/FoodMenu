@@ -10,3 +10,12 @@
   .card-tittle{
     align-self:right;
   }
+  .center {
+    align-self: center;
+  }
+  .recipe {
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }

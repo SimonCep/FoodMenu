@@ -1,6 +1,8 @@
 import { useParams } from "react-router-dom";
 import React, { useState, useEffect } from "react";
 import { Card, Container } from 'react-bootstrap';
+import "./recipePage.css"
+import { auto } from "@popperjs/core";
 
 function RecipePage() {
   const { id } = useParams();
@@ -20,9 +22,9 @@ function RecipePage() {
   const { strMeal, strMealThumb, strInstructions, strCategory, strArea, strYoutube} = meal[0];
 
   return (
-    <Container className="my-3" style={{ height: '100vh' }}>
+    <div className="recipe" style={{ height:  auto}}>
       <Card className="my-3 p-3 d-flex flex-column">
-        <Card.Img variant="top" src={strMealThumb} />
+        <Card.Img className="center" variant="top" src={strMealThumb} style={{height: 600}}/>
         <Card.Body className="d-flex flex-column">
           <Card.Title className="card-title">{strMeal}</Card.Title>
           <Card.Text className="card-text"><strong>Category:</strong> {strCategory}</Card.Text>
@@ -41,7 +43,7 @@ function RecipePage() {
         </div>
         </Card.Body>
       </Card>
-    </Container>
+    </div>
   );
 }
 
