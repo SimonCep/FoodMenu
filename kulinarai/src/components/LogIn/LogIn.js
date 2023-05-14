@@ -18,9 +18,9 @@ function LogInPage(){
             </div>
             <div className="logIn">
                 <form className="login-form" onSubmit={handleSubmit}>
-                    <label htmlfor='email'>Email adress</label>
+                    <label htmlFor='email'>Email adress</label>
                     <input type="email" placeholder='you@gmail.com' id="email" name="email"/>
-                    <label htmlfor='password'>Password</label>
+                    <label htmlFor='password'>Password</label>
                     <input type="password" placeholder='**********' id="password" name="password" />
 
                     <div style={{padding: 15}}>
