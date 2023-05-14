@@ -1,0 +1,12 @@
+
+  .topleft {
+    position: absolute;
+    top: 8px;
+    left: 16px;
+  }
+  .top-center{
+    align-self: center;
+  }
+  .card-tittle{
+    align-self:right;
+  }
