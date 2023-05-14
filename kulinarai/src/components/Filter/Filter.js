@@ -110,7 +110,7 @@ const Filter = () => {
                     {meals.map((meal) => (
                         <Col xs={6} md={4} lg={3} key={meal.idMeal}>
                             <a className="card-link" href={'/Recipe/' + meal.idMeal}>
-                                <Card className="my-3 p-3">
+                                <Card className="my-3 p-3" style={{height: 700}}>
                                     <Card.Img variant="top" src={meal.strMealThumb} />
                                     <Card.Body>
                                         <Card.Title>{meal.strMeal}</Card.Title>

@@ -15,7 +15,13 @@ function Navbar() {
           <span className="navbar-toggler-icon" />
         </Button>
         <div className="mx-auto">
-          <a className="navbar-brand" href="/" style={{ fontSize: '40px' }}>Kulinarai</a>
+          <a className="navbar-brand" href="/" style={{ fontSize: '40px', paddingLeft: 120}} >Kulinarai</a>
+        </div>
+        <div style={{padding: 10}}>
+          <Button variant="primary" href="/RegistrationPage" >Register</Button>
+        </div>
+        <div style={{padding: 10}}>
+        <Button variant="primary" href="/LogInPage">LogIn</Button>
         </div>
       </nav>
 
