@@ -1,21 +1,24 @@
+.topleft {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
 
-  .topleft {
-    position: absolute;
-    top: 8px;
-    left: 16px;
-  }
-  .top-center{
-    align-self: center;
-  }
-  .card-tittle{
-    align-self:right;
-  }
-  .center {
-    align-self: center;
-  }
-  .recipe {
-    padding-left: 60px;
-    padding-right: 60px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-  }
+.top-center {
+  align-self: center;
+}
+
+.card-tittle {
+  align-self: right;
+}
+
+.center {
+  align-self: center;
+}
+
+.recipe {
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}

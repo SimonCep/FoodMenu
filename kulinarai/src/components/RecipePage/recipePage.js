@@ -19,19 +19,18 @@ function RecipePage() {
     return <div>Loading...</div>
   }
   const YTube = meal[0].strYoutube.replace("watch?v=", "embed/");
-  const { strMeal, strMealThumb, strInstructions, strCategory, strArea, strYoutube} = meal[0];
+  const { strMeal, strMealThumb, strInstructions, strCategory, strArea, strYoutube } = meal[0];
 
   return (
-    <div className="recipe" style={{ height:  auto}}>
-      <Card className="my-3 p-3 d-flex flex-column">
-        <Card.Img className="center" variant="top" src={strMealThumb} style={{height: 600}}/>
+    <div className="recipe" style={{ height: auto }}>
+      <Card className="my-3 p-3 recipe-card">
         <Card.Body className="d-flex flex-column">
           <Card.Title className="card-title">{strMeal}</Card.Title>
           <Card.Text className="card-text"><strong>Category:</strong> {strCategory}</Card.Text>
           <Card.Text><strong>Area:</strong> {strArea}</Card.Text>
           <Card.Text><strong>Instructions:</strong> {strInstructions}</Card.Text>
           <div className="video-responsive">
-            <Card.Text style={{fontSize: 30}}><strong>Youtube video</strong></Card.Text>
+            <Card.Text style={{ fontSize: 30 }}><strong>Youtube video</strong></Card.Text>
             <iframe
               width="853"
               height="480"
@@ -40,7 +39,7 @@ function RecipePage() {
               allowFullScreen
               title="Embedded youtube"
             />
-        </div>
+          </div>
         </Card.Body>
       </Card>
     </div>
