@@ -21,16 +21,16 @@ function RegistrationPage(){
 
             <div className="registration-page">
                 <form className="registration-form">
-                    <label htmlfor="name">Name</label>
+                    <label htmlFor="name">Name</label>
                     <input type="text" placeholder='eg. Tom' id="name" name="name"/>
-                    <label htmlfor="surname">Surname</label>
+                    <label htmlFor="surname">Surname</label>
                     <input type="text" placeholder='eg. Jonson' id="surname" name="surname"/>
-                    <label htmlfor="email">Email</label>
+                    <label htmlFor="email">Email</label>
                     <input type="email" placeholder='eg. tomjonson@gmail.com' id="email" name="email"/>
-                    <label htmlfor="password">Password</label>
+                    <label htmlFor="password">Password</label>
                     <input type="password" placeholder='eg. ****************' id="password" name="password"/>
-                    <label htmlfor="confirm">Confirm Password</label>
-                    <input type="password" placeholder='eg. ****************' id="confirm" name="confirm"/>
+                    <label htmlFor="confirm">Confirm Password</label>
+                    <input type="password" placeholder='Confirm Password' id="confirm" name="confirm"/>
 
                     <div className="button-rigth" style={{padding: 15}}>
                         <Button type="submit" style={{paddingRight: 125, paddingLeft: 125}}>Register</Button>
