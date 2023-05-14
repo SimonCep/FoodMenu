@@ -16,8 +16,8 @@ function RecipePage() {
   if (!meal.length) {
     return <div>Loading...</div>
   }
-
-  const { strMeal, strMealThumb, strInstructions, strCategory, strArea } = meal[0];
+  const YTube = meal[0].strYoutube.replace("watch?v=", "embed/");
+  const { strMeal, strMealThumb, strInstructions, strCategory, strArea, strYoutube} = meal[0];
 
   return (
     <Container className="my-3" style={{ height: '100vh' }}>
@@ -28,6 +28,17 @@ function RecipePage() {
           <Card.Text className="card-text"><strong>Category:</strong> {strCategory}</Card.Text>
           <Card.Text><strong>Area:</strong> {strArea}</Card.Text>
           <Card.Text><strong>Instructions:</strong> {strInstructions}</Card.Text>
+          <div className="video-responsive">
+            <Card.Text style={{fontSize: 30}}><strong>Youtube video</strong></Card.Text>
+            <iframe
+              width="853"
+              height="480"
+              src={YTube}
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              title="Embedded youtube"
+            />
+        </div>
         </Card.Body>
       </Card>
     </Container>
